@@ -22,7 +22,13 @@ while True:
     except Exception as e :
         print('error: ',e)
         continue
-    print(methods_obj.calculate(params_object.first_number,params_object.second_number,params_object.operation) )
+    try:
+        print(methods_obj.calculate(params_object.first_number,params_object.second_number,params_object.operation) )
+    except ZeroDivisionError:
+        print('Math Error:Cant divide by 0 ')
+    except :
+        print('Error',e)
+    
     del params_object
     del methods_obj
     
