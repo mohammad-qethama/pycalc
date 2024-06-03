@@ -9,7 +9,7 @@ try:
         raise Exception('invalid expression please enter only numbers and mathematical operations')
 
     calculation_obj = ExpressionCalculator(expression)
-    calculation_obj.calculate()
+    calculation_obj.calculate1()
 
 except Exception as e:
     print('error: ',e)
